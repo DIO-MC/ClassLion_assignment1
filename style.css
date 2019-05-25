@@ -1,0 +1,161 @@
+/*First 멋쟁이 사자처럼 main project:
+developing my own web site
+developed by Minchul Kim @UNIST*/
+
+*{
+	box-sizing: border-box;
+}
+
+/*HEADER AREA*/
+
+header{
+	height: 660px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: 1px solid green;
+	margin-bottom: 100px;
+}
+
+#navbar {
+	padding: 0 20px;
+	border-bottom: 1px solid #eee;
+	/*overflow: hidden;*/
+	background-color: white;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
+	height: 60px;
+	margin-bottom: 1px;
+}
+
+ul{
+	float: right;
+	vertical-align: middle;
+	line-height: 61px;
+	margin-top: 0px;
+	margin-bottom: 0px !important;
+	padding-left: 0px;
+}
+li{
+	float: left;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: black;
+}
+
+#header_img{
+	height: 600px;
+	background-image: url("images/Slice 1.png");
+	background-size: cover;
+  	background-position: center center;
+}
+header h1{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
+	margin: 0;
+	line-height: 660px;
+	color: white;
+}
+
+
+/*MAIN AREA*/
+
+/* HOBBY SECTION */
+#hobby_section{
+	display: flex;
+	align-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-img-top{
+	height: 200px;
+	background-size: cover;
+}
+
+#hobby_section .card{
+	border-radius: 0.25rem;
+	width: 300px;
+	margin-right: 70px;
+	margin-bottom: 70px;
+}
+
+p{
+	text-align: center;
+}
+
+.div-for-centering-button{
+	text-align: center;
+}
+
+.div-for-centering-button a{
+	background-color: white;
+	color: black;
+	border: 2px solid #017BFF;
+	/*font-weight: bold;*/
+	font-family: Helvetica;
+	border-radius: 20px;
+}
+
+.div-for-centering-button a:hover{
+	background-color:  #017BFF!important;
+}
+
+/*이부분이 안됨.. 군대부분 빨간색치고싶은데*/
+.div-for-centering-button a:hover:nth-child(4){
+	background-color: red !important;
+}
+
+h5{
+	text-align: center;
+}
+
+/* SERVICE SECTION */
+
+#service_section h3{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+#service_section h4{
+	text-align: center;
+	margin-top: 70px;
+}
+
+
+#service_imgs{
+	display: flex;
+	justify-content: space-around;
+}
+#service_section img{
+	
+	width: 20%;
+	height: 20%;
+}
+
+/*FOOTER AREA*/
+footer{
+	border-top: 1px dotted black;
+	margin-top: 120px;
+
+}
+footer h6{
+	text-align: center;
+}
+footer .icons{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1px;
+	margin-bottom: 10px;
+/*	margin-left: auto;
+	margin-right: auto;*/
+}
+
+footer a:not(:last-child){
+	margin-right: 70px;
+}
